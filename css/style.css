@@ -341,7 +341,6 @@ input[type="radio"] {
   flex-direction: column;
   gap: 10px;
 }
-
 .col-6 {
   width: 50%;
 }
@@ -373,8 +372,8 @@ input[type="radio"] {
 
 /* Tombol button */
 button.cta {
-  background-color: rgba(51, 78, 172, 1);
-  color: #010101;
+  background-color: var(--galaxy);
+  color: #fff;
   border: none;
   padding: 14px 40px;
   font-size: 1rem;
