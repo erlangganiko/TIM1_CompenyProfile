@@ -199,3 +199,16 @@ window.addEventListener("load", () => {
 
 });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    new Typed(".typed-text", {
+      strings: [
+        "Solusi Digital Modern.",
+        "Partner Bisnis Inovatif.",
+        "Moemtaz untuk Masa Depan."
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  });
+
