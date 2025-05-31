@@ -342,6 +342,11 @@ input[type="radio"] {
   gap: 10px;
 }
 
+input:focus,
+textarea:focus {
+  border: 1px solid var(--planetary);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
 .col-6 {
   width: 50%;
 }
@@ -349,6 +354,11 @@ input[type="radio"] {
 .col-12 {
   width: 100%;
 }
+
+.contact-form{
+  border: var(--galaxy);
+}
+
 
 .form-control {
   padding: 16px 20px;
@@ -373,7 +383,7 @@ input[type="radio"] {
 
 /* Tombol button */
 button.cta {
-  background-color: rgba(51, 78, 172, 1);
+  background-color: rgb(206, 208, 216);
   color: #010101;
   border: none;
   padding: 14px 40px;
@@ -615,6 +625,8 @@ footer .social-media li a {
   }
 }
 
+/* cache and cookie */
+
 #reloadOverlay {
   position: fixed;
   inset: 0;
@@ -628,4 +640,21 @@ footer .social-media li a {
 #reloadOverlay.show {
   opacity: 1;
   pointer-events: all;
+}
+
+/* scroll to top */
+#scrollTop {
+  transition: opacity 0.3s ease;
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #667eea, #764ba2, #89f7fe, #66a6ff);
+  background-size: 800% 800%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
