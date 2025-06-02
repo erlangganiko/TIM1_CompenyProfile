@@ -410,14 +410,15 @@ footer {
     rgba(8, 31, 92, 1) 30%,
     rgba(51, 78, 172, 1) 95%
   );
-  margin-top: 3.125rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
 .footer {
-  width: 45%;
+  width: 100%;
   height: 50vh;
   max-height: fit-content;
   height: -moz-fit-content;
