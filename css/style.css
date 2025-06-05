@@ -85,11 +85,30 @@ body {
   left: 10;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-img {
+  width: 60px; /* sesuaikan ukuran logo */
+  height: auto;
+  margin-right: 10px; /* jarak antar logo dan teks */
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .navbar .navbar-nav a {
   color: var(--universe);
   display: inline-block;
   font-size: 1.2rem;
   margin: 0 1rem;
+  left: -15px;
 }
 
 .navbar .navbar-nav a:hover {
@@ -518,6 +537,7 @@ footer .social-media li a {
   }
 
   .card {
+    font-size: 120%;
     height: fit-content;
     height: -moz-max-content;
   }
@@ -580,8 +600,13 @@ footer .social-media li a {
   .col-6 {
     width: 100%;
   }
-
+  .service-content {
+    flex-direction: column;
+    text-align: center;
+  }
   .card {
+    font-size: 150%;
+    width: 100%;
     height: fit-content;
     height: -moz-max-content;
   }
